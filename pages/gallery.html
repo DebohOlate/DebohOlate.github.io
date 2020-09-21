@@ -158,5 +158,29 @@
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "f57051c0-2d38-48ac-9c2e-19abe320de27",
+      host: "https://wchat.freshchat.com"
+    });
+    // Copy the below lines under window.fcWidget.init inside initFreshChat function in the above snippet
+
+    // To set unique user id in your system when it is available
+    window.fcWidget.setExternalId("Deborah Olate");
+
+    // To set user name
+    window.fcWidget.user.setFirstName("Deborah");
+
+    // To set user email
+    window.fcWidget.user.setEmail("deborariveraolate@gmail.com");
+
+    // To set user properties
+    window.fcWidget.user.setProperties({
+      plan: "Estate",                 // meta property 1
+      status: "Active"                // meta property 2
+    });
+  }
+</script>
 </body>
 </html>
